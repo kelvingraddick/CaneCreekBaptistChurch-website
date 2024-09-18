@@ -1,0 +1,73 @@
+.appointment-time {
+	padding:5px;
+	margin: 1px;
+	color:white;
+	border-radius: 5px;
+	width: 15%;
+	display: inline-block;
+}
+
+.available {
+	background-color: #61B75F;
+}
+
+.available:hover {
+	background-color: green;
+}
+
+.unavailable {
+	background-color: #6C7A89;
+}
+
+.selected {
+	background-color: #E8832B;
+}
+
+.selected:hover {
+	background-color: orange;
+}
+
+.modal {
+	display: none;
+	width: 50%;
+	height: 50%;
+	z-index: 1000;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.modal-title {
+	width: 100%;
+	background-color: #dfdfdf;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.modal-title-td {
+	padding:20px;
+}
+
+.modal-text {
+	padding: 20px;
+	font-size: 15px;
+}
+
+.modal-close-button {
+	background-color:#515151;
+	color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.tent {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	z-index: 500;
+	background-color: rgba(0,0,0,0.5);
+}

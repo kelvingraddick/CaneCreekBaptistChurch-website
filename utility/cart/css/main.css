@@ -1,0 +1,130 @@
+.cart {
+	display: none;
+	position: fixed;
+	top:0px;
+	z-index: 1000;
+	width:100%;
+	max-height: 90%;
+	overflow-y: scroll;
+	-webkit-box-shadow: 1px 1px 5px black;
+	-moz-box-shadow:    1px 1px 5px black;
+  	box-shadow:         1px 1px 5px black;
+}
+
+.cart_title_div {
+	width:100%;
+	padding: 10px;
+	background-color:white;
+	font-size: 20px;
+}
+
+.cart_loading_span {
+	display: none;
+}
+
+.cart_item_table {
+	width:100%;
+	background-color:white !important;
+	border-bottom: 1px dashed #353535;
+}
+
+.cart_item_img_td {
+	width:15%;
+	height:70px;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center center;
+}
+
+.cart_item_info_td {
+	padding: 10px;
+	word-wrap: break-word;
+	font-size: 17px;
+}
+
+.cart_item_quantity {
+	width:7%;
+	font-size: 12px;
+	background-color:white;
+	border:1px solid #cccccc;
+}
+
+.cart_item_type {
+	border: 1px solid #cccccc;
+	padding: 4px 35px 4px 4px;
+	font-size: 12px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color:white;
+}
+
+.cart_item_type_arrow {
+	width: 100%;
+	font-size: 8px;
+	text-align: right;
+	float: right;
+	border: 1px solid black;
+}
+
+.cart_item_update_td {
+	padding: 10px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.cart_item_update_td_highlighted {
+	padding: 10px;
+	text-align: right;
+	cursor: pointer;
+	background-color: #D85B7F;
+}
+
+.cart_item_remove_td {
+	padding: 10px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.cart_total_div {
+	width:100%;
+	padding: 10px;
+	background-color:white;
+	font-size: 20px;
+}
+
+.cart_checkout_button {
+	width:100%;
+	padding: 10px;
+	color:white;
+	background-color: #D85B7F;
+	border:none;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.cart_checkout_div:hover {
+	background-color: #dfdfdf;
+}
+
+@media screen and (min-width: 0\0) {
+  select {
+    background: none;
+    padding: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+	.cart {
+		top:45px;
+		right:20px;
+		width:30%;
+		max-height: 90%;
+	}
+}
+
+@media (min-width: 992px) {
+
+}
