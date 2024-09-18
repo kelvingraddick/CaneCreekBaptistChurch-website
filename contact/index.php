@@ -37,7 +37,7 @@
 								<img class="blog_image" style="float:none; margin-bottom:0px;" src="<?php echo $location['photo']; ?>" />
 							</div>
 							<div class="col-xs-6 col-md-4">
-								<iframe width="300" height="150" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<?php echo str_replace(" ", "+", $setting['address1']." ".$setting['address2']." ".$setting['city'].",".$setting['state']." ".$setting['zip']); ?>&key=AIzaSyClRHLbLGnnFsMAj9MJWj_ouXxXI9w-kOQ"></iframe>
+								<iframe width="300" height="150" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<?php echo str_replace(" ", "+", $setting['address1']." ".$setting['address2']." ".$setting['city'].",".$setting['state']." ".$setting['zip']); ?>&key=GOOGLE_MAPS_KEY"></iframe>
 							</div>
 							<div class="col-xs-6 col-md-4" style="text-align:right; font-size:50px;">
 								<i class="fa fa-facebook" onclick="location.href='<?php echo $setting['facebook_link']; ?>';"></i><br />
