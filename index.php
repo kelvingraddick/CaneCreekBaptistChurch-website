@@ -50,9 +50,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-4 live_div">
 				<div class="title text-uppercase"><i class="fa fa-twitter" onclick="location.href='<?php echo $setting['twitter_link']; ?>';"></i>&nbsp;&nbsp;Live</div>
-				<a class="twitter-timeline" href="https://twitter.com/hashtag/god" data-widget-id="593326903605403648">#god Tweets</a> 
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				</script>
+				<a class="twitter-timeline" data-height="900" data-theme="light" href="https://twitter.com/YouVersion?ref_src=twsrc%5Etfw">Tweets by YouVersion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 			<div class="col-xs-12 col-md-8 blog_div">
 				<div class="title text-uppercase"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;News</div>
