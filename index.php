@@ -47,12 +47,8 @@
 				
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-12 col-md-4 live_div">
-				<div class="title text-uppercase"><i class="fa fa-twitter" onclick="location.href='<?php echo $setting['twitter_link']; ?>';"></i>&nbsp;&nbsp;Live</div>
-				<a class="twitter-timeline" data-height="900" data-theme="light" href="https://twitter.com/YouVersion?ref_src=twsrc%5Etfw">Tweets by YouVersion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-			<div class="col-xs-12 col-md-8 blog_div">
+		<div class="row gx-5">
+			<div class="col-xs-12 col-md-8 blog_div first_column">
 				<div class="title text-uppercase"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;News</div>
 				<div class="blog_box" style="height: 370px;">
 					<div class="blog_header">
@@ -84,6 +80,10 @@
 						</div><br />";
 					}
 				?>
+			</div>
+			<div class="col-xs-12 col-md-4 live_div last_column">
+				<div class="title text-uppercase"><i class="fa fa-twitter" onclick="location.href='<?php echo $setting['twitter_link']; ?>';"></i>&nbsp;&nbsp;Live</div>
+				<a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/YouVersion?ref_src=twsrc%5Etfw">Tweets by YouVersion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
 		<div class="row">

@@ -414,9 +414,14 @@ button:hover {
 	.title {
 		margin-left: 0px;
 	}
-	
-	.blog_div {
-		padding-left: 30px;
+
+	.first_column {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+
+	.last_column {
+		padding-left: 10px;
 		padding-right: 0px;
 	}
 
