@@ -22,6 +22,10 @@
 </head>
 <body>
 	<?php include $_SERVER['DOCUMENT_ROOT'].'/header.php'; ?>
+	<!-- Facebook JavaScript SDK -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0&appId=1052598519695284"></script>
+	<!-- END: Facebook JavaScript SDK -->
 	<div class="container">
 		<div class="row slideshow">
 			<div class="col-xs-12 col-md-12 slideshow_image" style="background-image: url('<?php echo $setting['feature1_photo']; ?>');">
@@ -82,8 +86,12 @@
 				?>
 			</div>
 			<div class="col-xs-12 col-md-4 live_div last_column">
+				<div class="title text-uppercase"><i class="fa fa-facebook" onclick="location.href='<?php echo $setting['facebook_link']; ?>';"></i>&nbsp;&nbsp;Live</div>
+				<div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100064858624031" data-tabs="timeline" data-width="" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100064858624031" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100064858624031">Cane Creek Baptist Church</a></blockquote></div>
+				<!-- Twitter widget
 				<div class="title text-uppercase"><i class="fa fa-twitter" onclick="location.href='<?php echo $setting['twitter_link']; ?>';"></i>&nbsp;&nbsp;Live</div>
 				<a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/YouVersion?ref_src=twsrc%5Etfw">Tweets by YouVersion</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				-->
 			</div>
 		</div>
 		<div class="row">
