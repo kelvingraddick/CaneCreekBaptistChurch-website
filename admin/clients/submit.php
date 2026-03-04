@@ -27,7 +27,7 @@
 			$time = date("YmdHis");
 			$id = mysqli_insert_id;
 			$admins = array(); 
-			$admins[0] = "('email', '$subject', '$body', '$time', 'new_user', '$id')";
+			$admins[0] = "('development@wavelinkllc.com', '$subject', '$body', '$time', 'new_user', '$id')";
 			if(mysqli_query("insert into emails (`to`, subject, text, time, type, reference_id) VALUES ".implode(',', $admins))) { } else { }
 			
 			header("Location: index.php");
