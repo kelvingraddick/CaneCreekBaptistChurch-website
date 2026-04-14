@@ -1,9 +1,12 @@
 <?php
+	//ini_set('display_errors', 1);
+    //ini_set('display_startup_errors', 1);
+    //error_reporting(E_ALL);
 	include $_SERVER['DOCUMENT_ROOT'].'/admin/authentication.php';
 	include $_SERVER['DOCUMENT_ROOT'].'/admin/utility/configuration.php';
 	include $_SERVER['DOCUMENT_ROOT'].'/admin/utility/functions.php';
 	$c = connect_to_database();
-	$id = $_POST['id'];
+	$id = isset($_POST['id']) ? $_POST['id'] : "";
 	$first_name = addslashes($_POST['first_name']);
 	$last_name = addslashes($_POST['last_name']);
 	$email = addslashes($_POST['email']);
@@ -25,10 +28,10 @@
 			$body .= "URL: ".$url."<br />";
 			$body .= "Description: ".$description;
 			$time = date("YmdHis");
-			$id = mysqli_insert_id;
+			$id = mysqli_insert_id($c);
 			$admins = array(); 
 			$admins[0] = "('development@wavelinkllc.com', '$subject', '$body', '$time', 'new_user', '$id')";
-			if(mysqli_query("insert into emails (`to`, subject, text, time, type, reference_id) VALUES ".implode(',', $admins))) { } else { }
+			if(mysqli_query($c, "insert into emails (`to`, subject, text, time, type, reference_id) VALUES ".implode(',', $admins))) { } else { }
 			
 			header("Location: index.php");
 		}else{ 
